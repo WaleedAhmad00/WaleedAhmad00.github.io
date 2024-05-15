@@ -1,0 +1,195 @@
+/* styles.css */
+/* Author: Waleed Ahmad */
+/* Updated: 06/05/2024 */
+
+/* Resetting default margin and padding for some elements */
+html, body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 18px; 
+}
+
+/* Heading styling */
+h1 {
+    font-size: 36px; 
+}
+
+h2 {
+    font-size: 30px; 
+}
+
+h3 {
+    font-size: 20px; 
+}
+
+h4 {
+    font-size: 18px; 
+}
+
+
+
+/* Header styling */
+header {
+    background-color: rgba(100, 100, 100, 0.9);
+    color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/* Main styling */
+main {
+    padding: 20px;
+}
+
+/* Unordered list in navigation styling */
+nav ul {
+    border: 10px;
+    padding: 20px;
+    list-style-type: none;
+}
+
+nav ul li {         /* each element */
+    display: inline;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+nav ul li a {       /* link */
+    background-color: rgba(255, 255, 255, 0.5); /* Background color with some opacity for contrast */
+    color: #000000;
+    font-size: 25px;
+    padding: 5px;
+    border-radius: 5px; /* Rounded corners for the box */
+}
+
+
+
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.content-box {      /* Content box */
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with some opacity for contrast */
+    padding: 20px; 
+    border-radius: 10px; /* Rounded corners for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth effect */
+    width: 80%; 
+    max-width: 600px;
+    height: auto; /* Let the height adjust according to the content */
+    margin: 20px auto; /* Center the box horizontally */
+}
+
+/*Side Image styling*/
+.sideImage {
+        width: 40%; /* Make the image width fill its container */
+        height: 20%; /* Maintain aspect ratio */
+        margin-bottom: 10px; /* Add some space below the image */
+    }
+
+/*Image styling */
+img {
+    width: 40%; /* Make the image width fill its container */
+    height: 20%; /* Maintain aspect ratio */
+    margin: 10px; /* Add some space below the image */
+}
+
+
+
+/* Apply styles to the submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px; 
+    margin: 20px; 
+    border: none; 
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 16px; /* Font size */
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker background color on hover */
+}
+
+/* Responsive video */
+    .content-box iframe {
+    margin: 10px;
+    width: 100%; /* Make the video fill its container */
+    }
+
+
+/* Mobile View */
+@media screen and (max-width: 479px) { /* Adjustments for screens up to 479px wide */
+    .content-box {
+        width: 90%; /* Adjust width for better fit on smaller screens */
+        padding: 20px; /* Adjust padding for better spacing */
+        margin: 20px auto; /* Adjust margin for centering */
+    }
+
+    .sideImage {
+        width: 40%; /* Make the image width fill its container */
+        height: 20%; /* Maintain aspect ratio */
+        margin-top: 50px;
+        margin-bottom: 10px; /* Add some space below the image */
+    }
+
+    nav ul {
+        padding: 10px; /* Reduce padding for better spacing */
+    }
+
+    nav ul li {
+        display: block; /* Change display to block for better display on smaller screens */
+        margin: 10px 0; /* Add margin-top and margin-bottom to separate navigation links */
+    }
+
+    h1 {
+        font-size: 26px; /* Decrease heading font size for better readability */
+    }
+
+    h2 {
+        font-size: 22px; /* Decrease subheading font size for better readability */
+    }
+
+    p {
+        font-size: 18px; /* Decrease paragraph font size for better readability */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Decrease navigation link font size for better readability */
+        padding: 3px; /* Reduce padding for better spacing */
+        margin-top: 20px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px; /* Reduce button padding for better spacing */
+        font-size: 14px; /* Decrease button font size for better fit */
+    }
+    
+    /* Responsive video */
+    .content-box iframe {
+    margin-right: 10px;
+    width: 100%; /* Make the video fill its container */
+    height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+
+
